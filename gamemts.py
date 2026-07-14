@@ -49,7 +49,7 @@ st.button("🔄 Lanjut Soal Berikutnya / Reset", on_click=ganti_soal_atau_reset)
 
 # Petunjuk kalimat target
 target_kalimat = " ".join(SOAL_LIST[st.session_state.q_idx])
-st.info(f"💡 *Misi Kasih:* Susun ubin kata acak di bawah agar menjadi kalimat utuh:\n\n*\"{target_kalimat}\"*")
+st.info(f"💡 *Misi ([st.session_state.player_name]):* Susun ubin kata acak di bawah agar menjadi kalimat utuh:\n\n*\"{target_kalimat}\"*")
 
 st.write(f"🔢 Jumlah Langkah Saat Ini: *{st.session_state.moves}*")
 
